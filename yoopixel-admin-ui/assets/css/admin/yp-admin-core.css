@@ -1,0 +1,243 @@
+/* YOOPixel Admin Core Styles */
+body, #wpbody-content, #wpcontent {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+body,
+.yp-header,
+.yp-dashboard-title,
+.yp-user-dropdown,
+.yp-user-name,
+.yp-user-name-dropdown,
+.yp-user-dropdown a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.yp-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #5A5A5A;
+    color: white;
+    padding: 15px 0;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    top: 0;
+    z-index: 999;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.yp-header-left {
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.yp-header-right {
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: auto;
+    overflow: visible;
+    max-width: none;
+    flex-shrink: 0;
+}
+
+.wrap {
+    max-width: 100% !important;
+    padding: 0 !important;
+}
+
+body.yp-clean-view .yp-header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+body.yp-clean-view #wpbody-content {
+    padding-top: 80px !important;
+}
+
+.yp-logo {
+    height: auto;
+}
+
+.yp-dashboard-title {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.yp-header-center {
+    display: flex;
+    align-items: center;
+}
+
+.yp-notifications {
+    position: relative;
+    font-size: 20px;
+    color: #fff;
+}
+
+.yp-notifications .notification-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: var(--yp-primary);
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+.yp-user-info {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 10px;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: visible;
+    text-overflow: ellipsis;
+    position: relative;
+}
+
+.yp-user-name {
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    display: inline-block;
+    max-width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.yp-user-photo {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* زر التبديل */
+.yp-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+}
+
+.yp-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.yp-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: .4s;
+}
+
+.yp-slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+.yp-switch input:checked + .yp-slider {
+    background-color: #EEB44E;
+}
+
+.yp-switch input:checked + .yp-slider:before {
+    transform: translateX(18px);
+}
+
+/* وضع Clean View */
+body.yp-clean-view #wpadminbar,
+body.yp-clean-view #adminmenumain,
+body.yp-clean-view #wpfooter,
+body.yp-clean-view #screen-meta,
+body.yp-clean-view #screen-meta-links {
+    display: none !important;
+}
+
+body.yp-clean-view #wpcontent {
+    margin-left: 0 !important;
+}
+
+.yp-user-info {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.yp-user-dropdown {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    background: #484848;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    display: none;
+    flex-direction: column;
+    min-width: 160px;
+    z-index: 9999;
+}
+
+.yp-user-info:hover .yp-user-dropdown,
+.yp-user-dropdown:hover {
+    display: flex;
+}
+
+.yp-user-name-dropdown {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.yp-user-dropdown a {
+    color: #EEB44E;
+    text-decoration: none;
+    font-size: 13px;
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    outline: none;              /* ✅ يشيل المربع الأزرق */
+    box-shadow: none;           /* ✅ احتياطي لإزالة أي border-focus */
+}
+
+.yp-user-dropdown a:hover {
+    color: #d89c33;             /* ✅ لون أغمق عند المرور */
+    text-decoration: none;      /* ✅ شيل الخط تحت الرابط */
+}
+
+
+.yp-user-dropdown a .dashicons {
+    font-size: 16px;
+    line-height: 1;
+}

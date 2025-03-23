@@ -1,0 +1,275 @@
+/* == YOOPIXEL DASHBOARD STYLES == */
+
+/* 🟧 الشبكة العامة */
+.yp-dashboard-grid,
+.yp-dashboard-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.yp-dashboard-grid + .yp-dashboard-grid {
+  margin-top: -10px;
+}
+
+.yp-dashboard-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 🟨 الكروت */
+.yp-card {
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 25px;
+    border: 1px solid #e0e0e0;
+}
+
+.yp-card-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.yp-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #606060;
+  margin: 0 0 0 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.yp-card-welcome {
+  font-size: 18px;
+  font-weight: 600;
+  color: #606060;
+  margin: 0 0 30px 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.yp-card-text {
+  font-size: 14px;
+  color: #555;
+}
+
+/* 🟦 الشبكة الأيقونية */
+.yp-icon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 15px;
+}
+
+.yp-icon-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8fafd;
+  border-radius: 8px;
+  padding: 20px 15px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.yp-icon-tile:hover {
+  background-color: #F7F7F7;
+  transform: translateY(-1px);
+}
+
+.yp-icon-tile span.dashicons {
+  font-size: 48px;
+  color: #EEB44E;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 32px;
+}
+
+.yp-icon-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #606060;
+}
+
+/* 🌐 أيقونات مربعة */
+.yp-icon-grid-boxes,
+.yp-action-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 10px;
+  justify-content: flex-start;
+}
+
+.yp-icon-grid-boxes .yp-icon-tile,
+.yp-action-grid .yp-icon-tile {
+  width: 113px;
+  height: 113px;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+}
+
+/* 🔻 الفوتر */
+.yp-footer-links {
+  text-align: center;
+  background: #fff;
+  margin-top: 1.5rem;
+  padding: 10px 0;
+  border-top: 1px solid #e0e0e0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.yp-footer-links a {
+  color: #EEB44E;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.yp-footer-links a:hover {
+  color: #d9aa59;
+  text-decoration: underline;
+}
+
+.yp-separator {
+  margin: 0 8px;
+  color: #6c757d;
+}
+
+/* 📋 جدول المنشورات */
+.yp-posts-table {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.yp-posts-header,
+.yp-posts-row {
+  display: grid;
+  grid-template-columns: 40px 1.5fr 1fr 1fr 1fr 0.7fr 1fr 1.2fr;
+  padding: 14px 20px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.yp-posts-header {
+  background-color: #e7e7e7;
+  font-weight: 600;
+  color: #5c5c5c;
+}
+
+.yp-posts-row:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.yp-posts-row:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.yp-posts-row a {
+  color: #5c5c5c;
+  text-decoration: none;
+}
+
+/* 🧰 أدوات التحكم */
+.yoopixel-posts-wrapper {
+  padding: 30px 40px;
+}
+
+.yp-posts-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 30px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.yp-btn-add,
+.yp-btn-apply {
+  background: #EEB44E;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: background 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.yp-btn-add:hover,
+.yp-btn-apply:hover {
+  background: #d9a03b;
+}
+
+.yp-posts-filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.yp-posts-filters select,
+.yp-btn-filter {
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.yp-btn-filter {
+  background: #eee;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.yp-btn-filter:hover {
+  background: #ddd;
+}
+
+.yp-posts-bulk-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.yp-posts-bulk-bar select {
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* الأيقونات (Edit/Delete) */
+.post-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.post-actions svg {
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.post-actions svg:hover {
+  transform: scale(1.1);
+}
+
+.post-actions a:focus,
+.post-actions a:hover {
+  outline: none;
+  box-shadow: none; /* إخفاء التأثير */
+}

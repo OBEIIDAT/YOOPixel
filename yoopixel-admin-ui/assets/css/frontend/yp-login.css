@@ -1,0 +1,139 @@
+/* ----------- General Page Styling ----------- */
+body.login {
+    background: url('../../images/Background.jpg') no-repeat center center fixed !important;
+    background-size: cover !important;
+    font-family: 'Montserrat', sans-serif !important;
+    overflow: hidden !important;
+    height: 100vh !important;
+}
+
+/* ----------- Login Box Styling ----------- */
+#login {
+    width: 400px !important;
+    padding: 30px !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25) !important;
+    margin: 60px 12% 60px auto !important;
+    float: right !important;
+}
+
+/* ----------- Logo Styling ----------- */
+.login h1 a {
+    background-image: url('../../images/yoopixel.png') !important;
+    background-size: contain !important;
+    width: 180px !important;
+    height: 80px !important;
+    margin: 0 auto 20px !important;
+}
+
+/* ----------- Messages/Notices Styling ----------- */
+.login .message,
+.login .notice,
+.login .success {
+    border-left: 4px solid #E89E43 !important;
+    padding: 12px !important;
+    margin-left: 0 !important;
+    margin-bottom: 20px !important;
+    background-color: #fff !important;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1) !important;
+}
+
+/* ----------- Input Fields & Button Styling ----------- */
+.login input[type="text"],
+.login input[type="password"] {
+    border: 1px solid #ddd !important;
+    border-radius: 5px !important;
+    padding: 12px !important;
+    font-size: 14px !important;
+}
+
+.login input[type="text"]:focus,
+.login input[type="password"]:focus {
+    border-color: #E89E43 !important;
+    box-shadow: 0 0 0 1px #E89E43 !important;
+    outline: none !important;
+}
+
+.login #wp-submit {
+    background: #E89E43 !important;
+    border: none !important;
+    padding: 12px 25px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    transition: all 0.3s ease !important;
+}
+
+.login #wp-submit:hover {
+    background: #cf8836 !important;
+    transform: translateY(-2px);
+}
+
+/* ----------- Links & Icons Styling ----------- */
+.login #nav a,
+.login #backtoblog a,
+.login p.message a {
+    color: #E89E43 !important;
+    text-decoration: none !important;
+}
+
+.login #nav a:hover,
+.login #backtoblog a:hover,
+.login p.message a:hover {
+    color: #cf8836 !important;
+}
+
+.login .dashicons-visibility,
+.login .dashicons-hidden {
+    color: #E89E43 !important;
+}
+
+.login .dashicons-visibility:hover,
+.login .dashicons-hidden:hover {
+    color: #cf8836 !important;
+}
+
+/* ----------- Custom Links Styling ----------- */
+.yoopixel-login-links {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    text-align: right;
+    z-index: 999;
+}
+
+.yoopixel-login-links a {
+    color: #fff !important;
+    text-decoration: none !important;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.yoopixel-login-links a:hover {
+    color: #efefef !important;
+}
+.login a:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* ----------- Mobile Responsive Styling ----------- */
+@media (max-width: 768px) {
+    #login {
+        width: 90% !important;
+        margin: 60px auto !important;
+        float: none !important;
+    }
+    
+    .yoopixel-login-links {
+        position: static;
+        text-align: center;
+        margin-top: 30px;
+        padding: 0 20px;
+    }
+    
+    .yoopixel-login-links a {
+        display: block;
+        margin: 10px 0;
+    }
+}
